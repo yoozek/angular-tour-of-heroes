@@ -1,3 +1,4 @@
+import { HEROES } from './mock-heroes';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 import {Hero} from '../hero'
@@ -13,6 +14,9 @@ export class HeroesComponent implements OnInit {
     id: 1,
     name: 'Windstorm'
   };
+
+  heroes = HEROES;
+
   constructor() { }
 
   ngOnInit() {
